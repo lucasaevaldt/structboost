@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Structboost</title>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/grid.css">
@@ -49,7 +51,7 @@
     <!---->
     <section class="s-hero">
         <div class="container">
-            <div class="text">
+            <div class="text" data-aos="fade-right">
                 <h1>Front-end descomplicado e direto ao ponto!</h1>
                 <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados.</p>
                 <button class="btn-primary lg">
@@ -57,8 +59,8 @@
                 </button>
                 <img src="./imgs/arrow-direction-button.png" class="arrow" alt="">
             </div>
-            <img src="./imgs/ilustra-hero.svg" class="ilustra" alt="">
-            <img src="./imgs/ilustra-mobile.svg" class="ilustra-mobile" alt="">
+            <img src="./imgs/ilustra-hero.svg" class="ilustra" alt="" data-aos="fade-up" data-aos-delay="200">
+            <img src="./imgs/ilustra-mobile.svg" class="ilustra-mobile" alt="" data-aos="fade-up" data-aos-delay="200">
         </div>
     </section>
     <!---->
@@ -195,7 +197,7 @@
         </div>
     </section>
     <!---->
-    <section class="newsletter">
+    <section class="s-newsletter">
         <div class="container">
             <h3>Front-end descomplicado e direto ao ponto!</h3>
             <!---->
@@ -292,5 +294,13 @@
             <p class="copy">2023 © Todos os direitos reservados. <strong>Codeboost</strong></p>
         </div>
     </footer>
+    <!-- AOS - Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+    <!-- AOS - Animate -->
 </body>
 </html>
